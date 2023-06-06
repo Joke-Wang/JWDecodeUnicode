@@ -26,11 +26,11 @@
 }
 
 - (NSString *)jh_descriptionWithLocale:(id)locale {
-    return [[self jh_descriptionWithLocale:locale] stringByReplaceUnicode];
+    return [[self jh_descriptionWithLocale:(locale ? locale : [NSLocale currentLocale])] stringByReplaceUnicode];
 }
 
 - (NSString *)jh_descriptionWithLocale:(id)locale indent:(NSUInteger)level {
-    return [[self jh_descriptionWithLocale:locale indent:level] stringByReplaceUnicode];
+    return [[self jh_descriptionWithLocale:(locale ? locale : [NSLocale currentLocale]) indent:level] stringByReplaceUnicode];
 }
 
 @end

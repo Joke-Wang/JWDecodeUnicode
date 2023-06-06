@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JWDecodeUnicode'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'iOS在控制台打印时，将Unicode直接显示为汉字。'
 
 # This description is used to generate tags and improve search results.
